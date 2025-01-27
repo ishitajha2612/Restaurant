@@ -8,10 +8,12 @@ let updateReviewSlider = (cards) => {
 };
 
 setInterval(() => {
-  currentReviews.forEach((card_index, i) => {
+  currentReviews.forEach((card_index) => {
     reviews[card_index].classList.remove("active");
+  });
 
-    currentReviews[i] = card_index >= reviews.length - 1 ? 0 : card_index + 1;
+  currentReviews = currentReviews.map((card_index) => {
+    return card_index >= reviews.length - 1 ? 0 : card_index + 1;
   });
 
   setTimeout(() => {
@@ -20,3 +22,14 @@ setInterval(() => {
 }, 5000);
 
 updateReviewSlider(currentReviews);
+
+//faq
+
+let faqs = [...document.querySelectorAll(".faq")];
+faqs.forEach((faq) => {
+  let ques = faq.querySelector(".question-box");
+
+  ques.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
+});
