@@ -16,6 +16,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
+    <!-- AOS CDN -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -44,8 +48,12 @@
           </div>
 
           <!-- cart button -->
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+
+        <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        <div class="nav-toggler">
+          <i class="fa-solid fa-bars"></i>     
+           </div>
       </nav>
 
       <!-- hero section -->
@@ -77,7 +85,7 @@
         </div>
 
         <!-- hero image container -->
-        <div class="hero-img-container">
+        <div class="hero-img-container" data-aos="fade-in ">
           <div class="background-ele">
             <div class="ellipse"></div>
             <div class="ellipse"></div>
@@ -168,7 +176,7 @@
           <button class="btn">Order food</button>
         </div>
       </div>
-
+<div class="restaurant-total">
       <div class="restaurants-container">
         <div class="restaurant">
           <p class="discount">50% Off</p>
@@ -182,7 +190,7 @@
             <span class="rating">4.2<i class="fa-solid fa-star"></i></span>
           </div>
         </div>
-
+        
         <div class="restaurant">
           <div class="restaurant-thumbnail">
             <img src="img/restaurant-2.png" class="restaurants-img" alt="" />
@@ -245,6 +253,7 @@
             <span class="rating">4.2<i class="fa-solid fa-star"></i></span>
           </div>
         </div>
+        </div>
 
         <div class="leaf-layer left">
           <img src="img/leaf-left.png" alt="" />
@@ -300,7 +309,7 @@
                     <i class="fa-solid fa-star-half-stroke"></i>
                   </div>
 
-                  <h2 class="review-name">Stephan </h2>
+                  <h2 class="review-name">Stephan</h2>
                 </div>
               </div>
 
@@ -449,46 +458,178 @@
 
       <div class="faq">
         <div class="question-box">
-            <h3 class="question">How can I cancel my reservation? </h3>
-            <i class="fa-solid fa-plus"></i>
+          <h3 class="question">How can I cancel my reservation?</h3>
+          <i class="fa-solid fa-plus"></i>
         </div>
-        <div class="answer_box">
-          <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores nostrum totam autem aut aliquid unde quisquam consequatur porro odio temporibus ipsum saepe modi doloribus accusantium ea repellat voluptatem est.</p>
+        <div class="answer-box">
+          <p class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores
+            nostrum totam autem aut aliquid unde quisquam consequatur porro odio
+            temporibus ipsum saepe modi doloribus accusantium ea repellat
+            voluptatem est.
+          </p>
         </div>
       </div>
-       <div class="faq">
+      <div class="faq">
         <div class="question-box">
-            <h3 class="question">My payment is declining. What should I do? </h3>
-            <i class="fa-solid fa-plus"></i>
+          <h3 class="question">My payment is declining. What should I do?</h3>
+          <i class="fa-solid fa-plus"></i>
         </div>
-        <div class="answer_box">
-          <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores nostrum totam autem aut aliquid unde quisquam consequatur porro odio temporibus ipsum saepe modi doloribus accusantium ea repellat voluptatem est.</p>
+        <div class="answer-box">
+          <p class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores
+            nostrum totam autem aut aliquid unde quisquam consequatur porro odio
+            temporibus ipsum saepe modi doloribus accusantium ea repellat
+            voluptatem est.
+          </p>
         </div>
       </div>
-       <div class="faq">
+      <div class="faq">
         <div class="question-box">
-            <h3 class="question">How can I change delivery address after order placement? </h3>
-            <i class="fa-solid fa-plus"></i>
+          <h3 class="question">
+            How can I change delivery address after order placement?
+          </h3>
+          <i class="fa-solid fa-plus"></i>
         </div>
-        <div class="answer_box">
-          <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores nostrum totam autem aut aliquid unde quisquam consequatur porro odio temporibus ipsum saepe modi doloribus accusantium ea repellat voluptatem est.</p>
+        <div class="answer-box">
+          <p class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores
+            nostrum totam autem aut aliquid unde quisquam consequatur porro odio
+            temporibus ipsum saepe modi doloribus accusantium ea repellat
+            voluptatem est.
+          </p>
         </div>
       </div>
-       <div class="faq">
+      <div class="faq">
         <div class="question-box">
-            <h3 class="question">How can I contact my delivery person? </h3>
-            <i class="fa-solid fa-plus"></i>
+          <h3 class="question">How can I contact my delivery person?</h3>
+          <i class="fa-solid fa-plus"></i>
         </div>
-        <div class="answer_box">
-          <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores nostrum totam autem aut aliquid unde quisquam consequatur porro odio temporibus ipsum saepe modi doloribus accusantium ea repellat voluptatem est.</p>
+        <div class="answer-box">
+          <p class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores
+            nostrum totam autem aut aliquid unde quisquam consequatur porro odio
+            temporibus ipsum saepe modi doloribus accusantium ea repellat
+            voluptatem est.
+          </p>
         </div>
       </div>
 
-      <div class="dish-layer right"><img src="img/side-dish.png" alt=""></div>
-
-
-
+      <div class="dish-layer right"><img src="img/side-dish.png" alt="" /></div>
     </section>
+
+    <!-- download app section -->
+
+    <section class="download-app-section">
+      <div class="section">
+        <div class="download-app-img-container">
+          <div class="pulse">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <img src="img/leafs.png" class="leaf left" alt="" />
+          <img src="img/leaf-left.png" class="leaf right" alt="" />
+
+          <img src="img/app.png" class="phone-mockup" alt="" />
+        </div>
+        <div class="section-detail">
+          <div class="section-highlight">Download our app to stay updated</div>
+          <p class="section-title">Make orders from your phone</p>
+          <p class="section-info">
+            Get extra feature on app including tracking order, managing account
+            and much more
+          </p>
+
+          <div class="download-btn-group">
+            <a href="#" class="download-btn"
+              ><img src="img/play-store.png" alt=""
+            /></a>
+            <a href="#" class="download-btn"
+              ><img src="img/app-store.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- discount banner -->
+    <div class="discount-banner">
+      <div class="section-detail">
+        <h1 class="section-title">Get an extra 20% off on your first order</h1>
+        <p class="section-info">Use this code during checkout</p>
+        <p class="discount-code">WELCOME20</p>
+      </div>
+
+      <div class="dish-slide">
+        <img src="img/discount-food-slider-1.png" alt="" />
+        <img src="img/hero-pizza.png" alt="" />
+        <img src="img/hero-burger.png" alt="" />
+      </div>
+    </div>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="company-info">
+        <img src="img/footer-logo.png" class="logo" alt="" />
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="download-btn-group">
+          <a href="#" class="download-btn"
+            ><img src="img/play-store.png" alt=""
+          /></a>
+          <a href="#" class="download-btn"
+            ><img src="img/app-store.png" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="useful-links footer-links-container">
+        <h5 class="footer-links-title">Useful Links</h5>
+        <a href="#" class="footer-links">Menu</a>
+        <a href="#" class="footer-links">Restaurants</a>
+        <a href="#" class="footer-links">Your Orders</a>
+        <a href="#" class="footer-links">Track Order</a>
+        <a href="#" class="footer-links">Support</a>
+      </div>
+
+      <div class="information footer-links-container">
+        <h5 class="footer-links-title">Information</h5>
+        <a href="#" class="footer-links">About Us</a>
+        <a href="#" class="footer-links">Privacy Policy</a>
+        <a href="#" class="footer-links">Terms & Conditions</a>
+        <a href="#" class="footer-links">Track Order</a>
+        <a href="#" class="footer-links">Support</a>
+      </div>
+
+      <div class="contact footer-links-container">
+        <h5 class="footer-links-title">Contact Us</h5>
+        <p class="footer-text">
+          Our main restaurant is located on Street 123, NYC
+        </p>
+        <p class="footer-text">Phone +91 465773485784</p>
+        <p class="footer-text">Email - help@logo.com</p>
+      </div>
+
+      <div class="payment-partners">
+        <img src="img/visa.png" alt="" />
+        <img src="img/master-card.png" alt="" />
+        <img src="img/paypal.png" alt="" />
+        <img src="img/stripe.pn" alt="" />
+        <img src="img/apple-pay.png" alt="" />
+        <img src="img/google-pay.png" alt="" />
+      </div>
+
+      <p class="payment-partners-text">Fully secured payment gateways by trusted companies</p>
+
+
+      <p class="copyright">Designed by Modern Web</p>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="app.js"></script>
   </body>
